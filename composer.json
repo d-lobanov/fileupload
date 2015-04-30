@@ -1,12 +1,12 @@
 {
-    "require": {
-        "php": ">=5.5.0"
-    },
-    "autoload": {
-        "classmap": [
-            "application/core",
-            "application/controllers",
-            "application/models"
-        ]
-    }
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "autoload": {
+    "classmap": [
+      "application/core",
+      "application/controllers",
+      "application/models"
+    ]
+  }
 }

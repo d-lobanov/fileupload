@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-    <title>FileUpload</title>
+	<title>FileUpload</title>
 	<meta name="description" content="Load file into the server">
 	<meta name="author" content="dmitry.lobanow@gmail.com">
 
@@ -13,12 +13,12 @@
 </head>
 
 <body>
-	<div class="container-narrow">
+<div class="container-narrow">
 	<div class="masthead">
 		<ul class="nav nav-pills pull-right">
-			<li class="<?=$activeAll?>"><a href="get?All">All user file</a></li>
-			<li class="<?=$activeUser?>"><a href="get?User">My file</a></li>
-			<li class="<?=$activePut?>"><a href="put">Upload</a></li>
+			<li class="<?= $activeAll ?>"><a href="get?All">All user file</a></li>
+			<li class="<?= $activeUser ?>"><a href="get?User">My file</a></li>
+			<li class="<?= $activePut ?>"><a href="put">Upload</a></li>
 			<li class="logout"><a href="logout">Logout</a></li>
 		</ul>
 		<h3 class="muted">FileUpload</h3>
@@ -26,7 +26,7 @@
 
 	<hr>
 
-    <?php include 'application/views/'.$template.'.php'; ?>
+	<?php include 'application/views/' . $template . '.php'; ?>
 
 	<hr>
 
@@ -34,7 +34,7 @@
 		<p>dmitry.lobanow@gmail.com</p>
 	</div>
 
-    </div>
+</div>
 </body>
 
 </html>

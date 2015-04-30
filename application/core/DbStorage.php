@@ -3,20 +3,24 @@
 /**
  * Class DbStorage абстракция для работы с базой
  */
-abstract class DbStorage{
+abstract class DbStorage
+{
 
-    protected $db;
+	protected $db;
 
-    public function __construct(PDO $db = null){
-        $this->db = (is_null($db)) ? App::getDbConnection() : $db;
-    }
+	public function __construct(PDO $db = null)
+	{
+		$this->db = (is_null($db)) ? App::getDbConnection() : $db;
+	}
 
-    static function getModel(){
-        return new static();
-    }
+	static function getModel()
+	{
+		return new static();
+	}
 
-    public function getDbConnection(){
-        return $this->db;
-    }
+	public function getDbConnection()
+	{
+		return $this->db;
+	}
 
 }
